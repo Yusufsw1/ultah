@@ -20,7 +20,7 @@ export default function Slideshow() {
         setPrev(null);
         setFading(false);
       }, 800);
-    }, 2000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [current]);
 
