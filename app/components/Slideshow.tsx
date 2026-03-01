@@ -25,12 +25,9 @@ export default function Slideshow() {
   }, [current]);
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-black text-white">
-      {/* Title */}
-      <h2 className="font-cormorant italic font-light text-4xl md:text-5xl mb-2">Kenangan Kita 🤍</h2>
-
+    <section className="flex flex-col items-center justify-center  bg-black text-white">
       {/* Photo frame */}
-      <div className="relative w-[300px] h-[400px] md:w-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl shadow-pink-500/20">
+      <div className="relative w-[150px] h-[200px] md:w-[150px] md:h-[200px] rounded-3xl overflow-hidden shadow-2xl shadow-pink-500/20 mb-4 mt-4">
         {prev !== null && (
           <Image
             key={`prev-${prev}`}
@@ -47,32 +44,12 @@ export default function Slideshow() {
         )}
         <Image key={`cur-${current}`} src={images[current]} alt="Memory" fill className="object-cover absolute inset-0" style={{ zIndex: 2 }} />
         <div
-          className="absolute inset-0 rounded-3xl pointer-events-none"
+          className="absolute inset-0 rounded-3xl pointer-events-none mb-8"
           style={{
             background: "radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.5) 100%)",
             zIndex: 3,
           }}
         />
-      </div>
-
-      {/* Progress bar */}
-      <div className="w-[300px] md:w-[400px] mt-5 h-[1px] bg-white/10 rounded-full overflow-hidden">
-        <div key={current} className="h-full bg-pink-300/60 rounded-full" style={{ animation: "progress 4000ms linear forwards" }} />
-      </div>
-
-      {/* Dots */}
-      <div className="flex gap-3 mt-4">
-        {images.map((_, i) => (
-          <div
-            key={i}
-            className="rounded-full transition-all duration-500"
-            style={{
-              width: i === current ? "20px" : "6px",
-              height: "6px",
-              background: i === current ? "#f9a8d4" : "rgba(255,255,255,0.15)",
-            }}
-          />
-        ))}
       </div>
 
       <style>{`

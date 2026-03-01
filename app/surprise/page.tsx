@@ -20,13 +20,13 @@ export default function SurprisePage() {
       {showText && (
         <div className="relative z-20 flex flex-col items-center gap-3">
           {/* Big romantic title */}
-          <h1 className="font-cormorant italic font-light text-5xl md:text-7xl leading-tight">Happy Birthday</h1>
+          <h1 className="font-cormorant italic font-light text-10xl md:text-9xl leading-tight">Happy Birthday</h1>
 
           {/* Name — big, gold-ish */}
-          <p className="font-cormorant italic text-pink-300 text-4xl md:text-6xl font-light">Sayangku </p>
+          <p className="font-cormorant italic font-light text-11xl md:text-9xl leading-tight">Sayangku </p>
 
           {/* Subtitle — Raleway spaced */}
-          <p className="font-raleway font-light text-sm md:text-base text-gray-400 tracking-[0.3em] uppercase mt-2">Barakallahu fii umrik, Semoga semua doa dan harapanmu terkabul ❤️. Milad Mubarak.</p>
+          <p className="font-cormorant italic font-light text-10xl md:text-base text-gray-400 ">Barakallahu fii umrik, Semoga semua doa dan harapanmu terkabul ❤️. Milad Mubarak.</p>
         </div>
       )}
 
