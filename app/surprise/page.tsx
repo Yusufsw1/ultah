@@ -25,7 +25,7 @@ export default function SurprisePage() {
           </h1>
 
           {/* Name */}
-          <p className="font-cormorant italic font-light text-4xl md:text-6xl" style={{ color: "#fbbf24" }}>
+          <p className="font-cormorant italic font-light text-4xl md:text-6xl" style={{ color: "#fef9c3" }}>
             Sayangku
           </p>
 
