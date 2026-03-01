@@ -16,11 +16,6 @@ export default function GiftButton({ onClick }: Props) {
 
   return (
     <div className="relative flex flex-col items-center mt-12">
-      {/* Hint text di atas */}
-      <p className="font-raleway text-[10px] tracking-[0.4em] uppercase text-pink-300/60 mb-5" style={{ animation: "floatUpDown 2s ease-in-out infinite" }}>
-        buka ini untukmu
-      </p>
-
       {/* Wrapper kerlap-kerlip */}
       <div className="relative">
         {/* Sparkles mengelilingi kado */}
@@ -121,15 +116,15 @@ export default function GiftButton({ onClick }: Props) {
 // Posisi & karakter sparkle di sekitar kado
 const SPARKLES = [
   { char: "✦", top: "-30px", left: "10px", size: "14px", duration: 1.8, delay: 0 },
-  { char: "✧", top: "-20px", left: "90px", size: "10px", duration: 2.1, delay: 0.3 },
-  { char: "★", top: "10px", left: "-28px", size: "12px", duration: 1.6, delay: 0.5 },
-  { char: "✦", top: "10px", left: "118px", size: "16px", duration: 2.3, delay: 0.2 },
-  { char: "✧", top: "60px", left: "-32px", size: "10px", duration: 1.9, delay: 0.7 },
-  { char: "✦", top: "60px", left: "122px", size: "12px", duration: 2.0, delay: 0.4 },
-  { char: "★", top: "100px", left: "-20px", size: "14px", duration: 1.7, delay: 0.6 },
-  { char: "✧", top: "100px", left: "108px", size: "10px", duration: 2.2, delay: 0.1 },
-  { char: "✦", top: "135px", left: "20px", size: "12px", duration: 1.5, delay: 0.8 },
-  { char: "★", top: "135px", left: "80px", size: "10px", duration: 2.4, delay: 0.35 },
-  { char: "✧", top: "-10px", left: "48px", size: "8px", duration: 1.6, delay: 0.9 },
-  { char: "✦", top: "140px", left: "48px", size: "8px", duration: 2.0, delay: 0.55 },
+  { char: "🌻", top: "-24px", left: "85px", size: "16px", duration: 2.1, delay: 0.3 },
+  { char: "✦", top: "10px", left: "-28px", size: "12px", duration: 1.6, delay: 0.5 },
+  { char: "✧", top: "10px", left: "118px", size: "16px", duration: 2.3, delay: 0.2 },
+  { char: "🌻", top: "60px", left: "-36px", size: "18px", duration: 1.9, delay: 0.7 },
+  { char: "✦", top: "60px", left: "120px", size: "12px", duration: 2.0, delay: 0.4 },
+  { char: "✧", top: "105px", left: "-24px", size: "14px", duration: 1.7, delay: 0.6 },
+  { char: "🌻", top: "108px", left: "112px", size: "16px", duration: 2.2, delay: 0.1 },
+  { char: "✦", top: "138px", left: "20px", size: "12px", duration: 1.5, delay: 0.8 },
+  { char: "✧", top: "138px", left: "80px", size: "10px", duration: 2.4, delay: 0.35 },
+  { char: "🌻", top: "-8px", left: "46px", size: "14px", duration: 1.6, delay: 0.9 },
+  { char: "✦", top: "144px", left: "50px", size: "8px", duration: 2.0, delay: 0.55 },
 ];

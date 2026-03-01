@@ -42,28 +42,32 @@ export default function LoveLetter() {
   }, [displayed]);
 
   return (
-    <section className="min-h-screen flex items-start justify-center pl-10 pr-10">
+    <section className="min-h-screen flex items-start justify-center px-10" style={{ background: "linear-gradient(160deg, #0a0800 0%, #130f00 50%, #1a1400 100%)" }}>
       <div className="max-w-xl w-full flex flex-col items-center gap-8 pt-10">
         {/* Decorative top */}
         <div className="flex items-center gap-4 w-full">
-          <span className="flex-1 h-px bg-gradient-to-r from-transparent to-pink-900/50" />
-          <p className="font-raleway text-[10px] tracking-[0.5em] uppercase text-pink-300/50">— untuk kamu —</p>
-          <span className="flex-1 h-px bg-gradient-to-l from-transparent to-pink-900/50" />
+          <span className="flex-1 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(245,158,11,0.3))" }} />
+          <p className="font-raleway text-[10px] tracking-[0.5em] uppercase" style={{ color: "#d97706" }}>
+            — untuk kamu —
+          </p>
+          <span className="flex-1 h-px" style={{ background: "linear-gradient(90deg, rgba(245,158,11,0.3), transparent)" }} />
         </div>
 
-        {/* Letter — mulai dari atas, tumbuh ke bawah */}
-        <div className="w-full font-cormorant italic text-xl md:text-2xl leading-[2] whitespace-pre-line text-left text-gray-200" style={{ minHeight: "4rem" }}>
+        {/* Letter */}
+        <div className="w-full font-cormorant italic text-xl md:text-2xl leading-[2] whitespace-pre-line text-left" style={{ color: "#fef3c7", minHeight: "4rem" }}>
           {displayed}
-          {!done && <span className="inline-block w-[2px] h-[1.1em] bg-pink-300 ml-1 align-middle animate-pulse" />}
-          {/* anchor untuk auto-scroll */}
+          {!done && <span className="inline-block w-[2px] h-[1.1em] ml-1 align-middle animate-pulse" style={{ background: "#fbbf24" }} />}
           <div ref={bottomRef} />
         </div>
 
-        {/* Signature muncul setelah selesai */}
+        {/* Signature */}
         {done && (
-          <div className="flex flex-col items-center gap-2 mt-4 animate-[fadeIn_1s_ease_forwards]">
-            <div className="w-16 h-px bg-pink-400/30" />
-            <p className="font-raleway font-light text-xs tracking-[0.45em] uppercase text-pink-300/60">with love ♥</p>
+          <div className="flex flex-col items-center gap-3 mt-4" style={{ animation: "fadeIn 1s ease forwards" }}>
+            <span style={{ fontSize: "1.5rem" }}>🌻</span>
+            <div className="h-px w-16" style={{ background: "linear-gradient(90deg, transparent, #f59e0b, transparent)" }} />
+            <p className="font-raleway font-light text-xs tracking-[0.45em] uppercase" style={{ color: "#d97706" }}>
+              with love ♥
+            </p>
           </div>
         )}
       </div>
